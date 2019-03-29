@@ -29,7 +29,7 @@ class VideosViewController: UIViewController {
     private func setUpConstraints() {
         let navBarHeight: CGFloat = self.navigationController?.navigationBar.frame.height ?? 0
         let statusBarHeight: CGFloat = UIApplication.shared.statusBarFrame.height
-        collectionViewTopConstraint.constant = (navBarHeight + statusBarHeight + statusBarHeight)
+        collectionViewTopConstraint.constant = (navBarHeight + statusBarHeight + navBarHeight)
         
         let tabBarHeight: CGFloat = self.tabBarController?.tabBar.frame.height ?? 0
         collectionViewBottomConstraint.constant = -(tabBarHeight)
