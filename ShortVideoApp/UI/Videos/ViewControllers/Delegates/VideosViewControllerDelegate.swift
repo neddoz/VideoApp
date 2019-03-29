@@ -16,4 +16,9 @@ extension VideosViewController: UICollectionViewDelegate, UICollectionViewDelega
         let screenHeight = screenSize.height
         return CGSize(width: screenWidth, height: screenHeight)
     }
+    
+//    func collectionView(_ collectionView: UICollectionView, didEndDisplaying cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
+//        guard let cell = cell as? VideoCollectionViewCell else { return}
+//        cell.pause()
+//    }
 }

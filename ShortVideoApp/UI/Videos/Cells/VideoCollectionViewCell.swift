@@ -45,13 +45,21 @@ class VideoCollectionViewCell: UICollectionViewCell, NibInstantiatable {
     }
     
     @objc
-    func togglePlayer() {
+    private func togglePlayer() {
         guard let unWrappedPlayer = player else {return}
         if unWrappedPlayer.isPlaying  {
-            unWrappedPlayer.pause()
+            pause()
         } else {
-            unWrappedPlayer.play()
+            pause()
         }
+    }
+    
+    func pause() {
+        player?.pause()
+    }
+
+    func play() {
+        player?.play()
     }
     
     func configure(with path: String) {
