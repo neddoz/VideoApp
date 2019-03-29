@@ -18,19 +18,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="Rxc-RY-Yp8">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="S2U-3d-bjW">
                                 <rect key="frame" x="112.5" y="268.5" width="150" height="150"/>
-                                <color key="tintColor" red="0.75686274509803919" green="0.22352941176470587" blue="0.16470588235294117" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="150" id="k5c-TZ-uht"/>
-                                    <constraint firstAttribute="width" secondItem="Rxc-RY-Yp8" secondAttribute="height" multiplier="1:1" id="ovh-jz-PGU"/>
+                                    <constraint firstAttribute="width" secondItem="S2U-3d-bjW" secondAttribute="height" multiplier="1:1" id="CuQ-Qy-Vx8"/>
+                                    <constraint firstAttribute="height" constant="150" id="YjP-vT-Viq"/>
                                 </constraints>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="Rxc-RY-Yp8" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="leM-Ha-FL6"/>
-                            <constraint firstItem="Rxc-RY-Yp8" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="wtL-Po-97g"/>
+                            <constraint firstItem="S2U-3d-bjW" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="0UB-GN-YTG"/>
+                            <constraint firstItem="S2U-3d-bjW" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="2jj-fj-b1Y"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -41,6 +40,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="logo" width="96" height="96"/>
+        <image name="logo" width="425" height="425"/>
     </resources>
 </document>
