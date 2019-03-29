@@ -32,6 +32,7 @@ class AddVideoCoordinator: Coordinator {
         let VC = AddVideoViewController.instantiate(from: .videos)
         VC.title = ""
         VC.tabBarItem.image = UIImage(named: "add-video")
+        VC.tabBarItem.imageInsets = UIEdgeInsets(top: 6, left: 0, bottom: -6, right: 0)
         VC.tabBarItem.isEnabled = true
         navigationController.viewControllers = [VC]
     }

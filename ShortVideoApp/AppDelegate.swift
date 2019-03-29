@@ -23,8 +23,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window?.rootViewController = coordinator?.navigationController
         window?.makeKeyAndVisible()
        
+        setAppearanceProtocol()
         return true
     }
 
 }
 
+extension AppDelegate {
+    func setAppearanceProtocol() {
+        
+        /// UINavigationBar Appearance
+        UINavigationBar.appearance().barTintColor = UIColor.white
+        UINavigationBar.appearance().titleTextAttributes = [NSAttributedString.Key.foregroundColor:UIColor.black]
+      
+        UITabBar.appearance().backgroundColor = .clear
+        UITabBar.appearance().backgroundImage = UIImage()
+//        UITabBar.appearance().shadowImage = UIImage()
+    }
+}
