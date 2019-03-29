@@ -36,34 +36,35 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WQE-tj-peO">
-                                                    <rect key="frame" x="335" y="50" width="30" height="30"/>
+                                                    <rect key="frame" x="325" y="50" width="40" height="40"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" secondItem="WQE-tj-peO" secondAttribute="height" multiplier="1:1" id="ScU-cz-aY0"/>
-                                                        <constraint firstAttribute="width" constant="30" id="VJW-Nv-icx">
-                                                            <userDefinedRuntimeAttributes>
-                                                                <userDefinedRuntimeAttribute type="number" keyPath="latey.cornerRadius">
-                                                                    <integer key="value" value="20"/>
-                                                                </userDefinedRuntimeAttribute>
-                                                            </userDefinedRuntimeAttributes>
-                                                        </constraint>
+                                                        <constraint firstAttribute="width" constant="40" id="VJW-Nv-icx"/>
                                                     </constraints>
                                                     <state key="normal" image="kayeli"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="keyPath" value="YES"/>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="latey.cornerRadius">
+                                                            <integer key="value" value="20"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
                                                 </button>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kzo-Dj-0ZD">
-                                                    <rect key="frame" x="340" y="95" width="30" height="30"/>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kzo-Dj-0ZD">
+                                                    <rect key="frame" x="330" y="110" width="40" height="40"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="height" constant="30" id="ABp-V4-4Nj"/>
+                                                        <constraint firstAttribute="height" constant="40" id="ABp-V4-4Nj"/>
                                                         <constraint firstAttribute="width" secondItem="kzo-Dj-0ZD" secondAttribute="height" multiplier="1:1" id="KBX-Bg-mLE"/>
                                                     </constraints>
                                                     <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     <state key="normal" image="favorite"/>
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j45-HM-sBT">
-                                                    <rect key="frame" x="338" y="140" width="30" height="30"/>
+                                                    <rect key="frame" x="328" y="170" width="40" height="40"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="height" constant="30" id="Jbi-IP-bDJ"/>
+                                                        <constraint firstAttribute="height" constant="40" id="Jbi-IP-bDJ"/>
                                                         <constraint firstAttribute="width" secondItem="j45-HM-sBT" secondAttribute="height" multiplier="1:1" id="zL8-M8-thx"/>
                                                     </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     <state key="normal" title="share" image="share"/>
                                                 </button>
@@ -72,10 +73,10 @@
                                         <color key="backgroundColor" red="0.75686274509999996" green="0.22352941179999999" blue="0.1647058824" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <gestureRecognizers/>
                                         <constraints>
-                                            <constraint firstItem="j45-HM-sBT" firstAttribute="top" secondItem="kzo-Dj-0ZD" secondAttribute="bottom" constant="15" id="0GN-SQ-Cv7"/>
+                                            <constraint firstItem="j45-HM-sBT" firstAttribute="top" secondItem="kzo-Dj-0ZD" secondAttribute="bottom" constant="20" id="0GN-SQ-Cv7"/>
                                             <constraint firstAttribute="trailing" secondItem="j45-HM-sBT" secondAttribute="trailing" constant="7" id="BDQ-9h-aGt"/>
                                             <constraint firstAttribute="trailing" secondItem="WQE-tj-peO" secondAttribute="trailing" constant="10" id="UZI-yF-rc7"/>
-                                            <constraint firstItem="kzo-Dj-0ZD" firstAttribute="top" secondItem="WQE-tj-peO" secondAttribute="bottom" constant="15" id="Xq4-o7-3Bs"/>
+                                            <constraint firstItem="kzo-Dj-0ZD" firstAttribute="top" secondItem="WQE-tj-peO" secondAttribute="bottom" constant="20" id="Xq4-o7-3Bs"/>
                                             <constraint firstAttribute="trailing" secondItem="kzo-Dj-0ZD" secondAttribute="trailing" constant="5" id="ZHb-2G-I2u"/>
                                             <constraint firstItem="WQE-tj-peO" firstAttribute="top" secondItem="jup-yC-JJG" secondAttribute="top" constant="50" id="oXn-89-JK2"/>
                                         </constraints>
@@ -119,15 +120,21 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Add videos" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bmc-cJ-5jG">
-                                <rect key="frame" x="115" y="162" width="86" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Coming Soon" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bmc-cJ-5jG">
+                                <rect key="frame" x="136" y="333" width="103" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="eha-YV-bPb"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="bmc-cJ-5jG" firstAttribute="centerX" secondItem="Zp3-74-iTG" secondAttribute="centerX" id="rA8-QW-M1M"/>
+                            <constraint firstItem="bmc-cJ-5jG" firstAttribute="centerY" secondItem="Zp3-74-iTG" secondAttribute="centerY" id="zbn-f7-g16"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Zp3-74-iTG"/>
                     </view>
                 </viewController>

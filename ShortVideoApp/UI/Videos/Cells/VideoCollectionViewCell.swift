@@ -31,10 +31,13 @@ class VideoCollectionViewCell: UICollectionViewCell, NibInstantiatable {
         favoriteButton.imageView?.contentMode = .scaleAspectFit
         
         // addUserButton
-        addUserButton.imageView?.contentMode = .scaleAspectFit
+        addUserButton.imageView?.contentMode = .scaleAspectFill
+        addUserButton.layer.cornerRadius = addUserButton.frame.width / 2
+        addUserButton.clipsToBounds = true
         
         // shareButton
         shareButton.imageView?.contentMode = .scaleAspectFit
+        shareButton.centerVertically()
         
         // Tap gesture
         let gesture = UITapGestureRecognizer.init(target: self, action: #selector(togglePlayer))
@@ -54,7 +57,8 @@ class VideoCollectionViewCell: UICollectionViewCell, NibInstantiatable {
     func configure(with path: String) {
         player = AVPlayer(url: URL(fileURLWithPath: path))
         let playerLayer = AVPlayerLayer(player: player)
-        playerLayer.frame = self.bounds
+        playerLayer.videoGravity = .resizeAspectFill
+        playerLayer.frame.size = CGSize.init(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height)
         self.layer.insertSublayer(playerLayer, at: 0)
         player?.play()
     }
