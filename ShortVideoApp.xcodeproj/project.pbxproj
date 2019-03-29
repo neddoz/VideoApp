@@ -22,6 +22,12 @@
 		AD969643224DF9D0003D4F45 /* StoryBoarded.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD969642224DF9D0003D4F45 /* StoryBoarded.swift */; };
 		AD969645224DFA82003D4F45 /* VideosCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD969644224DFA82003D4F45 /* VideosCoordinator.swift */; };
 		AD969647224DFBB7003D4F45 /* AddVideoCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD969646224DFBB7003D4F45 /* AddVideoCoordinator.swift */; };
+		AD96964B224E1F63003D4F45 /* UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD96964A224E1F63003D4F45 /* UIButton.swift */; };
+		AD96964E224E346B003D4F45 /* VideoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD96964D224E346B003D4F45 /* VideoCollectionViewCell.swift */; };
+		AD969650224E349D003D4F45 /* NibInstantiatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD96964F224E349D003D4F45 /* NibInstantiatable.swift */; };
+		AD969653224E3689003D4F45 /* VideosViewControllerDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD969652224E3689003D4F45 /* VideosViewControllerDataSource.swift */; };
+		AD969656224E36E2003D4F45 /* VideosViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD969655224E36E2003D4F45 /* VideosViewModel.swift */; };
+		AD969659224E3CB6003D4F45 /* VideosViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD969658224E3CB6003D4F45 /* VideosViewControllerDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +60,12 @@
 		AD969642224DF9D0003D4F45 /* StoryBoarded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryBoarded.swift; sourceTree = "<group>"; };
 		AD969644224DFA82003D4F45 /* VideosCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideosCoordinator.swift; sourceTree = "<group>"; };
 		AD969646224DFBB7003D4F45 /* AddVideoCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddVideoCoordinator.swift; sourceTree = "<group>"; };
+		AD96964A224E1F63003D4F45 /* UIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButton.swift; sourceTree = "<group>"; };
+		AD96964D224E346B003D4F45 /* VideoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCollectionViewCell.swift; sourceTree = "<group>"; };
+		AD96964F224E349D003D4F45 /* NibInstantiatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibInstantiatable.swift; sourceTree = "<group>"; };
+		AD969652224E3689003D4F45 /* VideosViewControllerDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideosViewControllerDataSource.swift; sourceTree = "<group>"; };
+		AD969655224E36E2003D4F45 /* VideosViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideosViewModel.swift; sourceTree = "<group>"; };
+		AD969658224E3CB6003D4F45 /* VideosViewControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideosViewControllerDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +107,7 @@
 		AD969608224DEF3A003D4F45 /* ShortVideoApp */ = {
 			isa = PBXGroup;
 			children = (
+				AD969649224E1F4B003D4F45 /* Extensions */,
 				AD96963F224DF968003D4F45 /* Enums */,
 				AD969639224DF865003D4F45 /* Components */,
 				AD969632224DF772003D4F45 /* UI */,
@@ -141,6 +154,7 @@
 			children = (
 				AD96962F224DF650003D4F45 /* Coordinator.swift */,
 				AD969642224DF9D0003D4F45 /* StoryBoarded.swift */,
+				AD96964F224E349D003D4F45 /* NibInstantiatable.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -165,6 +179,8 @@
 		AD969636224DF80B003D4F45 /* Videos */ = {
 			isa = PBXGroup;
 			children = (
+				AD969654224E36BE003D4F45 /* ViewModels */,
+				AD96964C224E343A003D4F45 /* Cells */,
 				AD96963A224DF8DA003D4F45 /* ViewControllers */,
 				AD969637224DF836003D4F45 /* Videos.storyboard */,
 			);
@@ -181,6 +197,8 @@
 		AD96963A224DF8DA003D4F45 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				AD969657224E3C9A003D4F45 /* Delegates */,
+				AD969651224E3669003D4F45 /* DataSource */,
 				AD96963B224DF8FB003D4F45 /* VideosViewController.swift */,
 				AD96963D224DF90C003D4F45 /* AddVideoViewController.swift */,
 			);
@@ -193,6 +211,46 @@
 				AD969640224DF98A003D4F45 /* ShortVideoStoryboards.swift */,
 			);
 			path = Enums;
+			sourceTree = "<group>";
+		};
+		AD969649224E1F4B003D4F45 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				AD96964A224E1F63003D4F45 /* UIButton.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		AD96964C224E343A003D4F45 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				AD96964D224E346B003D4F45 /* VideoCollectionViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		AD969651224E3669003D4F45 /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				AD969652224E3689003D4F45 /* VideosViewControllerDataSource.swift */,
+			);
+			path = DataSource;
+			sourceTree = "<group>";
+		};
+		AD969654224E36BE003D4F45 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				AD969655224E36E2003D4F45 /* VideosViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		AD969657224E3C9A003D4F45 /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				AD969658224E3CB6003D4F45 /* VideosViewControllerDelegate.swift */,
+			);
+			path = Delegates;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -297,16 +355,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD969650224E349D003D4F45 /* NibInstantiatable.swift in Sources */,
 				AD96963E224DF90C003D4F45 /* AddVideoViewController.swift in Sources */,
 				AD96963C224DF8FB003D4F45 /* VideosViewController.swift in Sources */,
 				AD969647224DFBB7003D4F45 /* AddVideoCoordinator.swift in Sources */,
 				AD96962D224DF609003D4F45 /* AppCoordinator.swift in Sources */,
+				AD969659224E3CB6003D4F45 /* VideosViewControllerDelegate.swift in Sources */,
 				AD969641224DF98A003D4F45 /* ShortVideoStoryboards.swift in Sources */,
 				AD969635224DF7AC003D4F45 /* MainTabBarViewController.swift in Sources */,
+				AD96964E224E346B003D4F45 /* VideoCollectionViewCell.swift in Sources */,
+				AD969656224E36E2003D4F45 /* VideosViewModel.swift in Sources */,
 				AD96960A224DEF3A003D4F45 /* AppDelegate.swift in Sources */,
 				AD969630224DF650003D4F45 /* Coordinator.swift in Sources */,
+				AD96964B224E1F63003D4F45 /* UIButton.swift in Sources */,
 				AD969645224DFA82003D4F45 /* VideosCoordinator.swift in Sources */,
 				AD969643224DF9D0003D4F45 /* StoryBoarded.swift in Sources */,
+				AD969653224E3689003D4F45 /* VideosViewControllerDataSource.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
