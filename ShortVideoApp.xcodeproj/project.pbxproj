@@ -12,6 +12,16 @@
 		AD969611224DEF3B003D4F45 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD969610224DEF3B003D4F45 /* Assets.xcassets */; };
 		AD969614224DEF3B003D4F45 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD969612224DEF3B003D4F45 /* LaunchScreen.storyboard */; };
 		AD96961F224DEF3C003D4F45 /* ShortVideoAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD96961E224DEF3C003D4F45 /* ShortVideoAppTests.swift */; };
+		AD96962D224DF609003D4F45 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD96962C224DF609003D4F45 /* AppCoordinator.swift */; };
+		AD969630224DF650003D4F45 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD96962F224DF650003D4F45 /* Coordinator.swift */; };
+		AD969635224DF7AC003D4F45 /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD969634224DF7AC003D4F45 /* MainTabBarViewController.swift */; };
+		AD969638224DF836003D4F45 /* Videos.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD969637224DF836003D4F45 /* Videos.storyboard */; };
+		AD96963C224DF8FB003D4F45 /* VideosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD96963B224DF8FB003D4F45 /* VideosViewController.swift */; };
+		AD96963E224DF90C003D4F45 /* AddVideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD96963D224DF90C003D4F45 /* AddVideoViewController.swift */; };
+		AD969641224DF98A003D4F45 /* ShortVideoStoryboards.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD969640224DF98A003D4F45 /* ShortVideoStoryboards.swift */; };
+		AD969643224DF9D0003D4F45 /* StoryBoarded.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD969642224DF9D0003D4F45 /* StoryBoarded.swift */; };
+		AD969645224DFA82003D4F45 /* VideosCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD969644224DFA82003D4F45 /* VideosCoordinator.swift */; };
+		AD969647224DFBB7003D4F45 /* AddVideoCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD969646224DFBB7003D4F45 /* AddVideoCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +44,16 @@
 		AD96961A224DEF3C003D4F45 /* ShortVideoAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShortVideoAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD96961E224DEF3C003D4F45 /* ShortVideoAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShortVideoAppTests.swift; sourceTree = "<group>"; };
 		AD969620224DEF3C003D4F45 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AD96962C224DF609003D4F45 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		AD96962F224DF650003D4F45 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		AD969634224DF7AC003D4F45 /* MainTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarViewController.swift; sourceTree = "<group>"; };
+		AD969637224DF836003D4F45 /* Videos.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Videos.storyboard; sourceTree = "<group>"; };
+		AD96963B224DF8FB003D4F45 /* VideosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideosViewController.swift; sourceTree = "<group>"; };
+		AD96963D224DF90C003D4F45 /* AddVideoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddVideoViewController.swift; sourceTree = "<group>"; };
+		AD969640224DF98A003D4F45 /* ShortVideoStoryboards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShortVideoStoryboards.swift; sourceTree = "<group>"; };
+		AD969642224DF9D0003D4F45 /* StoryBoarded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryBoarded.swift; sourceTree = "<group>"; };
+		AD969644224DFA82003D4F45 /* VideosCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideosCoordinator.swift; sourceTree = "<group>"; };
+		AD969646224DFBB7003D4F45 /* AddVideoCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddVideoCoordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +95,11 @@
 		AD969608224DEF3A003D4F45 /* ShortVideoApp */ = {
 			isa = PBXGroup;
 			children = (
+				AD96963F224DF968003D4F45 /* Enums */,
+				AD969639224DF865003D4F45 /* Components */,
+				AD969632224DF772003D4F45 /* UI */,
+				AD96962E224DF63E003D4F45 /* Protocols */,
+				AD96962B224DF5EB003D4F45 /* Coordinators */,
 				AD969629224DF068003D4F45 /* Assets */,
 				AD969609224DEF3A003D4F45 /* AppDelegate.swift */,
 				AD969615224DEF3B003D4F45 /* Info.plist */,
@@ -99,6 +124,75 @@
 				AD969610224DEF3B003D4F45 /* Assets.xcassets */,
 			);
 			path = Assets;
+			sourceTree = "<group>";
+		};
+		AD96962B224DF5EB003D4F45 /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				AD96962C224DF609003D4F45 /* AppCoordinator.swift */,
+				AD969644224DFA82003D4F45 /* VideosCoordinator.swift */,
+				AD969646224DFBB7003D4F45 /* AddVideoCoordinator.swift */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		AD96962E224DF63E003D4F45 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				AD96962F224DF650003D4F45 /* Coordinator.swift */,
+				AD969642224DF9D0003D4F45 /* StoryBoarded.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		AD969632224DF772003D4F45 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				AD969636224DF80B003D4F45 /* Videos */,
+				AD969633224DF788003D4F45 /* MainTabBar */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		AD969633224DF788003D4F45 /* MainTabBar */ = {
+			isa = PBXGroup;
+			children = (
+				AD969634224DF7AC003D4F45 /* MainTabBarViewController.swift */,
+			);
+			path = MainTabBar;
+			sourceTree = "<group>";
+		};
+		AD969636224DF80B003D4F45 /* Videos */ = {
+			isa = PBXGroup;
+			children = (
+				AD96963A224DF8DA003D4F45 /* ViewControllers */,
+				AD969637224DF836003D4F45 /* Videos.storyboard */,
+			);
+			path = Videos;
+			sourceTree = "<group>";
+		};
+		AD969639224DF865003D4F45 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		AD96963A224DF8DA003D4F45 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				AD96963B224DF8FB003D4F45 /* VideosViewController.swift */,
+				AD96963D224DF90C003D4F45 /* AddVideoViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		AD96963F224DF968003D4F45 /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				AD969640224DF98A003D4F45 /* ShortVideoStoryboards.swift */,
+			);
+			path = Enums;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -184,6 +278,7 @@
 			files = (
 				AD969614224DEF3B003D4F45 /* LaunchScreen.storyboard in Resources */,
 				AD969611224DEF3B003D4F45 /* Assets.xcassets in Resources */,
+				AD969638224DF836003D4F45 /* Videos.storyboard in Resources */,
 				AD96960F224DEF3A003D4F45 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -202,7 +297,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD96963E224DF90C003D4F45 /* AddVideoViewController.swift in Sources */,
+				AD96963C224DF8FB003D4F45 /* VideosViewController.swift in Sources */,
+				AD969647224DFBB7003D4F45 /* AddVideoCoordinator.swift in Sources */,
+				AD96962D224DF609003D4F45 /* AppCoordinator.swift in Sources */,
+				AD969641224DF98A003D4F45 /* ShortVideoStoryboards.swift in Sources */,
+				AD969635224DF7AC003D4F45 /* MainTabBarViewController.swift in Sources */,
 				AD96960A224DEF3A003D4F45 /* AppDelegate.swift in Sources */,
+				AD969630224DF650003D4F45 /* Coordinator.swift in Sources */,
+				AD969645224DFA82003D4F45 /* VideosCoordinator.swift in Sources */,
+				AD969643224DF9D0003D4F45 /* StoryBoarded.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
