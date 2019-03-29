@@ -32,6 +32,7 @@
 		AD96965E224E4912003D4F45 /* 5b9391f2032f6.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = AD96965D224E4912003D4F45 /* 5b9391f2032f6.mp4 */; };
 		AD969660224E4921003D4F45 /* 5c9d020891642.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = AD96965F224E4921003D4F45 /* 5c9d020891642.mp4 */; };
 		AD969662224E4F74003D4F45 /* AVPPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD969661224E4F74003D4F45 /* AVPPlayer.swift */; };
+		AD969664224E5FF3003D4F45 /* UISegmentedControll.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD969663224E5FF3003D4F45 /* UISegmentedControll.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +75,7 @@
 		AD96965D224E4912003D4F45 /* 5b9391f2032f6.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = 5b9391f2032f6.mp4; sourceTree = "<group>"; };
 		AD96965F224E4921003D4F45 /* 5c9d020891642.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = 5c9d020891642.mp4; sourceTree = "<group>"; };
 		AD969661224E4F74003D4F45 /* AVPPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AVPPlayer.swift; sourceTree = "<group>"; };
+		AD969663224E5FF3003D4F45 /* UISegmentedControll.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UISegmentedControll.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -227,6 +229,7 @@
 			children = (
 				AD96964A224E1F63003D4F45 /* UIButton.swift */,
 				AD969661224E4F74003D4F45 /* AVPPlayer.swift */,
+				AD969663224E5FF3003D4F45 /* UISegmentedControll.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -387,6 +390,7 @@
 				AD969659224E3CB6003D4F45 /* VideosViewControllerDelegate.swift in Sources */,
 				AD969641224DF98A003D4F45 /* ShortVideoStoryboards.swift in Sources */,
 				AD969635224DF7AC003D4F45 /* MainTabBarViewController.swift in Sources */,
+				AD969664224E5FF3003D4F45 /* UISegmentedControll.swift in Sources */,
 				AD96964E224E346B003D4F45 /* VideoCollectionViewCell.swift in Sources */,
 				AD969656224E36E2003D4F45 /* VideosViewModel.swift in Sources */,
 				AD96960A224DEF3A003D4F45 /* AppDelegate.swift in Sources */,

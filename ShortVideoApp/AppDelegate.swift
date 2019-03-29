@@ -41,6 +41,6 @@ extension AppDelegate {
       
         UITabBar.appearance().backgroundColor = .clear
         UITabBar.appearance().backgroundImage = UIImage()
-        UITabBar.appearance().tintColor = .black
+        UITabBar.appearance().tintColor = .white
     }
 }

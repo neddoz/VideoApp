@@ -36,10 +36,10 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WQE-tj-peO">
-                                                    <rect key="frame" x="325" y="50" width="40" height="40"/>
+                                                    <rect key="frame" x="328" y="50" width="30" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" secondItem="WQE-tj-peO" secondAttribute="height" multiplier="1:1" id="ScU-cz-aY0"/>
-                                                        <constraint firstAttribute="width" constant="40" id="VJW-Nv-icx"/>
+                                                        <constraint firstAttribute="width" constant="30" id="VJW-Nv-icx"/>
                                                     </constraints>
                                                     <state key="normal" image="kayeli"/>
                                                     <userDefinedRuntimeAttributes>
@@ -50,16 +50,16 @@
                                                     </userDefinedRuntimeAttributes>
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kzo-Dj-0ZD">
-                                                    <rect key="frame" x="330" y="110" width="40" height="40"/>
+                                                    <rect key="frame" x="330" y="90" width="35" height="35"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="height" constant="40" id="ABp-V4-4Nj"/>
+                                                        <constraint firstAttribute="height" constant="35" id="ABp-V4-4Nj"/>
                                                         <constraint firstAttribute="width" secondItem="kzo-Dj-0ZD" secondAttribute="height" multiplier="1:1" id="KBX-Bg-mLE"/>
                                                     </constraints>
                                                     <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     <state key="normal" image="favorite"/>
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j45-HM-sBT">
-                                                    <rect key="frame" x="328" y="170" width="40" height="40"/>
+                                                    <rect key="frame" x="328" y="140" width="40" height="40"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="40" id="Jbi-IP-bDJ"/>
                                                         <constraint firstAttribute="width" secondItem="j45-HM-sBT" secondAttribute="height" multiplier="1:1" id="zL8-M8-thx"/>
@@ -70,14 +70,14 @@
                                                 </button>
                                             </subviews>
                                         </view>
-                                        <color key="backgroundColor" red="0.75686274509999996" green="0.22352941179999999" blue="0.1647058824" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" red="0.66666666669999997" green="0.70980392160000005" blue="0.72941176470000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <gestureRecognizers/>
                                         <constraints>
-                                            <constraint firstItem="j45-HM-sBT" firstAttribute="top" secondItem="kzo-Dj-0ZD" secondAttribute="bottom" constant="20" id="0GN-SQ-Cv7"/>
+                                            <constraint firstItem="j45-HM-sBT" firstAttribute="top" secondItem="kzo-Dj-0ZD" secondAttribute="bottom" constant="15" id="0GN-SQ-Cv7"/>
                                             <constraint firstAttribute="trailing" secondItem="j45-HM-sBT" secondAttribute="trailing" constant="7" id="BDQ-9h-aGt"/>
-                                            <constraint firstAttribute="trailing" secondItem="WQE-tj-peO" secondAttribute="trailing" constant="10" id="UZI-yF-rc7"/>
-                                            <constraint firstItem="kzo-Dj-0ZD" firstAttribute="top" secondItem="WQE-tj-peO" secondAttribute="bottom" constant="20" id="Xq4-o7-3Bs"/>
-                                            <constraint firstAttribute="trailing" secondItem="kzo-Dj-0ZD" secondAttribute="trailing" constant="5" id="ZHb-2G-I2u"/>
+                                            <constraint firstAttribute="trailing" secondItem="WQE-tj-peO" secondAttribute="trailing" constant="17" id="UZI-yF-rc7"/>
+                                            <constraint firstItem="kzo-Dj-0ZD" firstAttribute="top" secondItem="WQE-tj-peO" secondAttribute="bottom" constant="10" id="Xq4-o7-3Bs"/>
+                                            <constraint firstAttribute="trailing" secondItem="kzo-Dj-0ZD" secondAttribute="trailing" constant="10" id="ZHb-2G-I2u"/>
                                             <constraint firstItem="WQE-tj-peO" firstAttribute="top" secondItem="jup-yC-JJG" secondAttribute="top" constant="50" id="oXn-89-JK2"/>
                                         </constraints>
                                         <connections>
@@ -92,11 +92,24 @@
                                     <outlet property="delegate" destination="DnE-c9-d0F" id="LE5-my-VUx"/>
                                 </connections>
                             </collectionView>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Yui-fw-ad4">
+                                <rect key="frame" x="115" y="20" width="145" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="28" id="BBf-YO-TS1"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="Following"/>
+                                    <segment title="For You"/>
+                                </segments>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </segmentedControl>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="nhS-he-6jY" firstAttribute="leading" secondItem="Oxe-32-mOd" secondAttribute="leading" id="7lC-Le-gMP"/>
+                            <constraint firstItem="Yui-fw-ad4" firstAttribute="centerX" secondItem="Oxe-32-mOd" secondAttribute="centerX" id="AjW-k2-o5K"/>
                             <constraint firstItem="Oxe-32-mOd" firstAttribute="trailing" secondItem="nhS-he-6jY" secondAttribute="trailing" id="H4b-jQ-tse"/>
+                            <constraint firstItem="Yui-fw-ad4" firstAttribute="top" secondItem="Oxe-32-mOd" secondAttribute="top" id="QzF-Ui-Yza"/>
                             <constraint firstAttribute="top" secondItem="nhS-he-6jY" secondAttribute="top" id="YPd-4F-nqg"/>
                             <constraint firstItem="Oxe-32-mOd" firstAttribute="bottom" secondItem="nhS-he-6jY" secondAttribute="bottom" id="dq9-AQ-0eY"/>
                         </constraints>
@@ -105,6 +118,8 @@
                     <connections>
                         <outlet property="collectionViewBottomConstraint" destination="dq9-AQ-0eY" id="bwa-rk-j8i"/>
                         <outlet property="collectionViewTopConstraint" destination="YPd-4F-nqg" id="Ccw-5Z-cCf"/>
+                        <outlet property="followersControlTopConstraint" destination="QzF-Ui-Yza" id="mwk-NS-cRh"/>
+                        <outlet property="followersSegmentedControl" destination="Yui-fw-ad4" id="CJs-Hb-Lwq"/>
                         <outlet property="videosCollectionView" destination="nhS-he-6jY" id="xpZ-BU-wwd"/>
                     </connections>
                 </viewController>
@@ -130,7 +145,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.66666666666666663" green="0.70980392156862748" blue="0.72941176470588232" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="bmc-cJ-5jG" firstAttribute="centerX" secondItem="Zp3-74-iTG" secondAttribute="centerX" id="rA8-QW-M1M"/>
                             <constraint firstItem="bmc-cJ-5jG" firstAttribute="centerY" secondItem="Zp3-74-iTG" secondAttribute="centerY" id="zbn-f7-g16"/>
@@ -140,7 +155,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YvP-vx-GjG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="794" y="117"/>
+            <point key="canvasLocation" x="-26" y="802"/>
         </scene>
     </scenes>
     <resources>
