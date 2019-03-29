@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		AD96960A224DEF3A003D4F45 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD969609224DEF3A003D4F45 /* AppDelegate.swift */; };
-		AD96960C224DEF3A003D4F45 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD96960B224DEF3A003D4F45 /* ViewController.swift */; };
 		AD96960F224DEF3A003D4F45 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD96960D224DEF3A003D4F45 /* Main.storyboard */; };
 		AD969611224DEF3B003D4F45 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD969610224DEF3B003D4F45 /* Assets.xcassets */; };
 		AD969614224DEF3B003D4F45 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD969612224DEF3B003D4F45 /* LaunchScreen.storyboard */; };
@@ -28,7 +27,6 @@
 /* Begin PBXFileReference section */
 		AD969606224DEF3A003D4F45 /* ShortVideoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShortVideoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD969609224DEF3A003D4F45 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		AD96960B224DEF3A003D4F45 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		AD96960E224DEF3A003D4F45 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AD969610224DEF3B003D4F45 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AD969613224DEF3B003D4F45 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -77,12 +75,11 @@
 		AD969608224DEF3A003D4F45 /* ShortVideoApp */ = {
 			isa = PBXGroup;
 			children = (
+				AD969629224DF068003D4F45 /* Assets */,
 				AD969609224DEF3A003D4F45 /* AppDelegate.swift */,
-				AD96960B224DEF3A003D4F45 /* ViewController.swift */,
-				AD96960D224DEF3A003D4F45 /* Main.storyboard */,
-				AD969610224DEF3B003D4F45 /* Assets.xcassets */,
-				AD969612224DEF3B003D4F45 /* LaunchScreen.storyboard */,
 				AD969615224DEF3B003D4F45 /* Info.plist */,
+				AD96960D224DEF3A003D4F45 /* Main.storyboard */,
+				AD969612224DEF3B003D4F45 /* LaunchScreen.storyboard */,
 			);
 			path = ShortVideoApp;
 			sourceTree = "<group>";
@@ -94,6 +91,14 @@
 				AD969620224DEF3C003D4F45 /* Info.plist */,
 			);
 			path = ShortVideoAppTests;
+			sourceTree = "<group>";
+		};
+		AD969629224DF068003D4F45 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				AD969610224DEF3B003D4F45 /* Assets.xcassets */,
+			);
+			path = Assets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -197,7 +202,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AD96960C224DEF3A003D4F45 /* ViewController.swift in Sources */,
 				AD96960A224DEF3A003D4F45 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -361,7 +365,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 877YN8A4MC;
+				DEVELOPMENT_TEAM = U4FVESJ54S;
 				INFOPLIST_FILE = ShortVideoApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -379,7 +383,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 877YN8A4MC;
+				DEVELOPMENT_TEAM = U4FVESJ54S;
 				INFOPLIST_FILE = ShortVideoApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
