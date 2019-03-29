@@ -33,7 +33,10 @@ extension AppDelegate {
     func setAppearanceProtocol() {
         
         /// UINavigationBar Appearance
+        UINavigationBar.appearance().backgroundColor = UIColor.clear
         UINavigationBar.appearance().barTintColor = UIColor.white
+        UINavigationBar.appearance().setBackgroundImage(UIImage(), for: .default)
+        UINavigationBar.appearance().shadowImage = UIImage()
         UINavigationBar.appearance().titleTextAttributes = [NSAttributedString.Key.foregroundColor:UIColor.black]
       
         UITabBar.appearance().backgroundColor = .clear
