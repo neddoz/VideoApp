@@ -10,7 +10,18 @@ import Foundation
 
 struct VideosViewModel {
     
+    var paths: [String]
+    
+    init() {
+        let paths = Bundle.main.paths(forResourcesOfType: "mp4", inDirectory: nil)
+        self.paths = paths
+    }
+    
     func numberOfRows()-> Int {
-        return 1
+        return paths.count
+    }
+
+    func path(for item: Int)-> String {
+        return paths[item]
     }
 }

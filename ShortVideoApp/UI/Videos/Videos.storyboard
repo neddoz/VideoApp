@@ -21,7 +21,7 @@
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="nhS-he-6jY">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="aPj-J5-ecM">
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="aPj-J5-ecM">
                                     <size key="itemSize" width="375" height="649"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
@@ -70,6 +70,7 @@
                                             </subviews>
                                         </view>
                                         <color key="backgroundColor" red="0.75686274509999996" green="0.22352941179999999" blue="0.1647058824" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <gestureRecognizers/>
                                         <constraints>
                                             <constraint firstItem="j45-HM-sBT" firstAttribute="top" secondItem="kzo-Dj-0ZD" secondAttribute="bottom" constant="15" id="0GN-SQ-Cv7"/>
                                             <constraint firstAttribute="trailing" secondItem="j45-HM-sBT" secondAttribute="trailing" constant="7" id="BDQ-9h-aGt"/>

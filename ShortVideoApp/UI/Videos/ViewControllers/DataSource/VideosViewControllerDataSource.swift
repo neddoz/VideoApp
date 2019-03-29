@@ -17,6 +17,7 @@ extension VideosViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let dequedCell = collectionView.dequeueReusableCell(withReuseIdentifier: VideoCollectionViewCell.NibName, for: indexPath)
         guard let cell = dequedCell as? VideoCollectionViewCell else {return UICollectionViewCell()}
+        cell.configure(with: viewModel.path(for: indexPath.row))
         return cell
     }
 }

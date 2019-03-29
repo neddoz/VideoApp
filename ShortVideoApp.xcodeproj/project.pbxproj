@@ -28,6 +28,10 @@
 		AD969653224E3689003D4F45 /* VideosViewControllerDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD969652224E3689003D4F45 /* VideosViewControllerDataSource.swift */; };
 		AD969656224E36E2003D4F45 /* VideosViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD969655224E36E2003D4F45 /* VideosViewModel.swift */; };
 		AD969659224E3CB6003D4F45 /* VideosViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD969658224E3CB6003D4F45 /* VideosViewControllerDelegate.swift */; };
+		AD96965C224E4902003D4F45 /* 59f2838a7fee0.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = AD96965B224E4902003D4F45 /* 59f2838a7fee0.mp4 */; };
+		AD96965E224E4912003D4F45 /* 5b9391f2032f6.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = AD96965D224E4912003D4F45 /* 5b9391f2032f6.mp4 */; };
+		AD969660224E4921003D4F45 /* 5c9d020891642.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = AD96965F224E4921003D4F45 /* 5c9d020891642.mp4 */; };
+		AD969662224E4F74003D4F45 /* AVPPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD969661224E4F74003D4F45 /* AVPPlayer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +70,10 @@
 		AD969652224E3689003D4F45 /* VideosViewControllerDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideosViewControllerDataSource.swift; sourceTree = "<group>"; };
 		AD969655224E36E2003D4F45 /* VideosViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideosViewModel.swift; sourceTree = "<group>"; };
 		AD969658224E3CB6003D4F45 /* VideosViewControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideosViewControllerDelegate.swift; sourceTree = "<group>"; };
+		AD96965B224E4902003D4F45 /* 59f2838a7fee0.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = 59f2838a7fee0.mp4; sourceTree = "<group>"; };
+		AD96965D224E4912003D4F45 /* 5b9391f2032f6.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = 5b9391f2032f6.mp4; sourceTree = "<group>"; };
+		AD96965F224E4921003D4F45 /* 5c9d020891642.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = 5c9d020891642.mp4; sourceTree = "<group>"; };
+		AD969661224E4F74003D4F45 /* AVPPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AVPPlayer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +115,7 @@
 		AD969608224DEF3A003D4F45 /* ShortVideoApp */ = {
 			isa = PBXGroup;
 			children = (
+				AD96965A224E48E7003D4F45 /* Data */,
 				AD969649224E1F4B003D4F45 /* Extensions */,
 				AD96963F224DF968003D4F45 /* Enums */,
 				AD969639224DF865003D4F45 /* Components */,
@@ -217,6 +226,7 @@
 			isa = PBXGroup;
 			children = (
 				AD96964A224E1F63003D4F45 /* UIButton.swift */,
+				AD969661224E4F74003D4F45 /* AVPPlayer.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -251,6 +261,16 @@
 				AD969658224E3CB6003D4F45 /* VideosViewControllerDelegate.swift */,
 			);
 			path = Delegates;
+			sourceTree = "<group>";
+		};
+		AD96965A224E48E7003D4F45 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				AD96965B224E4902003D4F45 /* 59f2838a7fee0.mp4 */,
+				AD96965F224E4921003D4F45 /* 5c9d020891642.mp4 */,
+				AD96965D224E4912003D4F45 /* 5b9391f2032f6.mp4 */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -335,8 +355,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				AD969614224DEF3B003D4F45 /* LaunchScreen.storyboard in Resources */,
+				AD96965C224E4902003D4F45 /* 59f2838a7fee0.mp4 in Resources */,
 				AD969611224DEF3B003D4F45 /* Assets.xcassets in Resources */,
 				AD969638224DF836003D4F45 /* Videos.storyboard in Resources */,
+				AD969660224E4921003D4F45 /* 5c9d020891642.mp4 in Resources */,
+				AD96965E224E4912003D4F45 /* 5b9391f2032f6.mp4 in Resources */,
 				AD96960F224DEF3A003D4F45 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -360,6 +383,7 @@
 				AD96963C224DF8FB003D4F45 /* VideosViewController.swift in Sources */,
 				AD969647224DFBB7003D4F45 /* AddVideoCoordinator.swift in Sources */,
 				AD96962D224DF609003D4F45 /* AppCoordinator.swift in Sources */,
+				AD969662224E4F74003D4F45 /* AVPPlayer.swift in Sources */,
 				AD969659224E3CB6003D4F45 /* VideosViewControllerDelegate.swift in Sources */,
 				AD969641224DF98A003D4F45 /* ShortVideoStoryboards.swift in Sources */,
 				AD969635224DF7AC003D4F45 /* MainTabBarViewController.swift in Sources */,

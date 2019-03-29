@@ -7,12 +7,16 @@
 //
 
 import UIKit
+import AVKit
+import AVFoundation
 
 class VideoCollectionViewCell: UICollectionViewCell, NibInstantiatable {
     
     @IBOutlet var favoriteButton: UIButton!
     @IBOutlet var addUserButton: UIButton!
     @IBOutlet var shareButton: UIButton!
+    
+    var player: AVPlayer?
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -31,5 +35,27 @@ class VideoCollectionViewCell: UICollectionViewCell, NibInstantiatable {
         
         // shareButton
         shareButton.imageView?.contentMode = .scaleAspectFit
+        
+        // Tap gesture
+        let gesture = UITapGestureRecognizer.init(target: self, action: #selector(togglePlayer))
+        self.addGestureRecognizer(gesture)
+    }
+    
+    @objc
+    func togglePlayer() {
+        guard let unWrappedPlayer = player else {return}
+        if unWrappedPlayer.isPlaying  {
+            unWrappedPlayer.pause()
+        } else {
+            unWrappedPlayer.play()
+        }
+    }
+    
+    func configure(with path: String) {
+        player = AVPlayer(url: URL(fileURLWithPath: path))
+        let playerLayer = AVPlayerLayer(player: player)
+        playerLayer.frame = self.bounds
+        self.layer.insertSublayer(playerLayer, at: 0)
+        player?.play()
     }
 }
